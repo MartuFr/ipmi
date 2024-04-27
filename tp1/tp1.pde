@@ -1,4 +1,4 @@
-PImage LUNAA4;
+PImage LUNAA4; //Martina Fuhr, 119031/9, comisión 2
   
 void setup(){
   size(800,400);
