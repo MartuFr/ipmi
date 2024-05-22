@@ -90,21 +90,28 @@ else if (estado == "gameplay"){
     tam += 1;
     }
     
-    //boton
     rect (esquinaX1, esquinaY1, ancho, alto);
     fill(255);
     textSize(27);
     text("Reiniciar",68,108);
+    
 }
 }
     void mousePressed(){
       
+      
+         //boton
+         if(estado=="gameplay"){
+
       if (mouseX > esquinaX1 && mouseX < esquinaX1+ancho && mouseY > esquinaY1 && mouseY < esquinaY1+alto){
         estado = "menu";
         println("se presiono el boton");
         frameCount = 0;
         tam=1;
         opa=1;
+      }
+        
+        
       }
     }
 
